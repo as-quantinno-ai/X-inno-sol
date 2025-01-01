@@ -1,0 +1,529 @@
+// color variants
+@import 'themes-vars.module.scss';
+
+// third-party
+@import '~react-perfect-scrollbar/dist/css/styles.css';
+
+// ==============================|| LIGHT BOX ||============================== //
+.slick-arrow:before {
+    color: $grey500;
+}
+._custom-grid .css-4pdmu4-MuiBreadcrumbs-ol { 
+    flex-wrap: nowrap !important;
+}
+
+// ==============================|| LIGHT BOX ||============================== //
+.fullscreen .react-images__blanket {
+    z-index: 1200;
+}
+/* Add this CSS to your stylesheet */
+
+@keyframes drawLine {
+    from {
+      stroke-dashoffset: 1000;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  .animated-arrow {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: drawLine 2s ease-in-out forwards;
+  }
+  
+
+// ==============================|| APEXCHART ||============================== //
+
+.apexcharts-legend-series .apexcharts-legend-marker {
+    margin-right: 8px;
+}
+
+// ==============================|| PERFECT SCROLLBAR ||============================== //
+
+.scrollbar-container {
+    .ps__rail-y {
+        &:hover > .ps__thumb-y,
+        &:focus > .ps__thumb-y,
+        &.ps--clicking .ps__thumb-y {
+            background-color: $grey500;
+            width: 5px;
+        }
+    }
+    .ps__thumb-y {
+        background-color: $grey500;
+        border-radius: 6px;
+        width: 5px;
+        right: 0;
+    }
+}
+
+.scrollbar-container.ps,
+.scrollbar-container > .ps {
+    &.ps--active-y > .ps__rail-y {
+        width: 5px;
+        background-color: transparent !important;
+        z-index: 999;
+        &:hover,
+        &.ps--clicking {
+            width: 5px;
+            background-color: transparent;
+        }
+    }
+    &.ps--scrolling-y > .ps__rail-y,
+    &.ps--scrolling-x > .ps__rail-x {
+        opacity: 0.4;
+        background-color: transparent;
+    }
+}
+.css-ohwg9z {
+    overflow: visible;
+}
+
+// ==============================|| ANIMATION KEYFRAMES ||============================== //
+
+@keyframes wings {
+    50% {
+        transform: translateY(-40px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    53%,
+    to {
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        transform: translateZ(0);
+    }
+    40%,
+    43% {
+        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        transform: translate3d(0, -5px, 0);
+    }
+    70% {
+        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        transform: translate3d(0, -7px, 0);
+    }
+    80% {
+        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        transform: translateZ(0);
+    }
+    90% {
+        transform: translate3d(0, -2px, 0);
+    }
+}
+
+@keyframes slideY {
+    0%,
+    50%,
+    100% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    75% {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes slideX {
+    0%,
+    50%,
+    100% {
+        transform: translateX(0px);
+    }
+    25% {
+        transform: translateX(-10px);
+    }
+    75% {
+        transform: translateX(10px);
+    }
+}
+
+@keyframes redBlink {
+    0% {
+        color: red;
+    }
+    50% {
+        color: rgba(255, 0, 0, 0.726);
+    }
+    100% {
+        color: red;
+    }
+}
+
+@keyframes greenBlink {
+    0% {
+        color: rgb(21, 255, 0);
+    }
+    50% {
+        color: rgba(21, 255, 0, 0.726);
+    }
+    100% {
+        color: rgb(21, 255, 0);
+    }
+}
+
+.redDot {
+    animation: redBlink infinite 4s;
+}
+
+.greenDot {
+    animation: greenBlink infinite 4s;
+}
+
+.rdg.r104f42s700-beta11::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background-color: #1d2540;
+}
+
+.rdg.r104f42s700-beta11::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+}
+
+.rdg.r104f42s700-beta11::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.rdg-header-row {
+    background: #39a9a5 !important;
+}
+.rdg-row {
+    background: transparent !important;
+    color: black;
+}
+div[role='grid'] {
+    background: transparent !important;
+}
+
+.overlay {
+    background: transparent !important;
+    --gradient-color: none !important;
+    --gradient-width: none !important;
+}
+
+.MuiFormControl-root {
+    margin: 0px;
+}
+
+input[type='file'] {
+    display: none;
+}
+.custom-file-upload {
+    border: 2px dotted rgba(204, 204, 204, 0.623);
+    border-radius: 8px;
+    padding: 6px 12px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#simple-tabpanel-0 > div,
+#simple-tabpanel-1 > div {
+    padding: 0px;
+}
+
+#query-btn .css-i4bv87-MuiSvgIcon-root {
+    font-size: 2.5rem;
+}
+
+div[aria-colindex='4'] {
+    // background-color: yellow;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+main.MuiBox-root {
+    height: fit-content !important;
+}
+
+.css-1dmmvux {
+    padding-top: 0px !important;
+}
+.css-19kzrtu {
+    padding: 0px !important;
+}
+
+#home {
+    padding-top: 0px;
+}
+
+.css-1f635ng-MuiPaper-root {
+    box-shadow: none;
+    border: 1px solid #b0bec575;
+}
+main {
+    // background: #eef2f6 !important;
+}
+
+.thead {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 4;
+}
+
+.custom-form-inps {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 5px;
+}
+.css-f1qys9-MuiPaper-root {
+    box-shadow: none !important;
+}
+
+._featured-table .css-c5tkor-MuiTableCell-root {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    text-overflow: ellipsis;
+}
+._featured-table .css-1g5rvli-MuiTableCell-root {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+}
+._featured-table .css-i4bv87-MuiSvgIcon-root {
+    font-size: 20px;
+}
+
+._data-quality-table .css-fk40yb-MuiTableCell-root {
+  //  background-color: white !important;
+    font-size: 12px ;
+
+}
+
+._data-quality-table .tss-1fz4yw6-MUIDataTableSelectCell-fixedLeft {
+    background-color: white !important;
+
+}
+._query-table .css-i4bv87-MuiSvgIcon-root {
+    font-size: 20px;
+}
+._query-table .css-1g5rvli-MuiTableCell-root {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    text-overflow: ellipsis;
+}
+._query-table .css-c5tkor-MuiTableCell-root {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+}
+
+.css-teccuw-MuiToolbar-root-MuiTablePagination-toolbar {
+    padding: 0px !important;
+}
+.css-1kgefj2-MuiTableCell-root {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.css-knbujx-MuiTableCell-root {
+    padding: 0px !important;
+}
+
+.css-unw1q4-MuiButtonBase-root-MuiButton-root {
+    font-size: 12px !important;
+    font-weight: 600;
+}
+// .tss-1cdcmys-MUIDataTable-responsiveBase {
+//     padding: 20px !important;
+// }
+.css-n39bzf-MuiButtonBase-root-MuiButton-root {
+    font-size: 12px !important;
+    font-weight: 600;
+}
+
+/* For WebKit browsers */
+.horizontal-scrollbar {
+    overflow-x: scroll;
+}
+
+.horizontal-scrollbar::-webkit-scrollbar {
+    height: 12px; /* Adjust scrollbar height */
+}
+
+.horizontal-scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background of the scrollbar track */
+}
+
+.horizontal-scrollbar::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar handle */
+    border-radius: 10px;
+    border: 2px solid #f1f1f1; /* Space around the scrollbar handle */
+}
+
+.horizontal-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color on hover */
+}
+
+/* Firefox */
+.horizontal-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+}
+
+/* Internet Explorer and Edge */
+.horizontal-scrollbar {
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+
+.dropdown-container {
+    text-align: left;
+    border: 1px solid rgb(38, 38, 38);
+    font-family: 'Roboto', sans-serif;
+    color: #616161;
+    position: relative;
+    border-radius: 5px;
+    font-size: 0.875rem;
+    box-sizing: border-box;
+    width: 250px;
+}
+
+.dropdown-input {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+}
+
+.dropdown-menu {
+    position: absolute;
+    transform: translateY(4px);
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: auto;
+    max-height: 500px;
+    background-color: #fff;
+    white-space: normal;
+    z-index: 3;
+}
+
+.dropdown-item {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background-color: #9fc3f870;
+}
+
+.dropdown-item.selected {
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+.dropdown-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.sign-up-button {
+    color: $grey500;
+}
+
+.dropdown-tag-item {
+    background-color: #ddd;
+    padding: 2px 4px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-tag-close {
+    display: flex;
+    align-items: center;
+}
+
+div::-webkit-scrollbar {
+    /* Style away! */
+    width: 8px;
+    height: 8px;
+    background-color: #e0d8d8bb;
+}
+div::-webkit-scrollbar-thumb {
+    background: #828284bb;
+    border-radius: 5px;
+}
+
+div::-webkit-scrollbar-button:vertical {
+    display: block;
+    background-color: #444141;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+
+div::-webkit-scrollbar-button:vertical:start:decrement {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/7e/Chevron-up.svg');
+}
+
+::-webkit-scrollbar-button:vertical:start:increment {
+    display: none;
+}
+
+::-webkit-scrollbar-button:vertical:end:decrement {
+    display: none;
+}
+
+div::-webkit-scrollbar-button:vertical:end:increment {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/ee/Chevron-down.svg');
+}
+
+
+.MuiDrawer-paperAnchorLeft {
+    z-index: 1 !important;
+}
+.custom-header {
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .resize-handle {
+    position: absolute;
+    right: 0;
+    top: '10px';
+    bottom: 0;
+    width: 5px;
+    cursor: col-resize;
+    background-color: transparent;
+  }
+  
+ 
+
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  .animated-arrow path {
+    stroke-dasharray: 5;
+    stroke-dashoffset: 20;
+    animation: dash 1s linear infinite;
+  }
